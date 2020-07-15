@@ -20,13 +20,13 @@ cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
 cy.xpath("//*[@id='firstname']").type("Hardcoded")
 
-cy.xpath("//*[@id='lastname']").type(" DataGen.Name.LastName()")
+cy.xpath("//*[@id='lastname']").type("Larson")
 
 cy.xpath("//*[@id='email_address']").type("james.walker@curiosity.software")
 
-cy.xpath("//*[@id='password']").type("DataGen.Internet.Password()")
+cy.xpath("//*[@id='password']").type("pHSTN8PAOX")
 
-cy.xpath("//*[@id='password-confirmation']").type(""#!_ @"")
+cy.xpath("//*[@id='password-confirmation']").type("#!_ @")
 
    })
 })
