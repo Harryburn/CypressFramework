@@ -18,7 +18,7 @@ describe("{{{ModelName}}}", function() {
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("DataGen.Lorem.Word()")
+cy.xpath("//*[@id='firstname']").type("Hardcoded")
 
 cy.xpath("//*[@id='lastname']").type(" DataGen.Name.LastName()")
 
