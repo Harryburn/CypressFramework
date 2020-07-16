@@ -18,15 +18,15 @@ describe("{{{ModelName}}}", function() {
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("et")
+cy.xpath("//*[@id='firstname']").type("voluptate")
 
-cy.xpath("//*[@id='lastname']").type("Veum")
+cy.xpath("//*[@id='lastname']").type("Murazik")
 
 cy.xpath("//*[@id='email_address']").type("james.walker@curiosity.software")
 
-cy.xpath("//*[@id='password']").type("2PBZYzmBwO")
+cy.xpath("//*[@id='password']").type("me64fimkow")
 
-cy.xpath("//*[@id='password-confirmation']").type("2PBZYzmBwO")
+cy.xpath("//*[@id='password-confirmation']").type("me64fimkow")
 
 cy.xpath("	//BUTTON[@class='action submit primary']/SPAN").click()
 
