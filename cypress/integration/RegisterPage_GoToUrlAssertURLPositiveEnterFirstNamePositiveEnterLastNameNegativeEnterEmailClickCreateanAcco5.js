@@ -12,15 +12,21 @@ Cypress.on('fail', (err) => {
 
 
 describe("{{{ModelName}}}", function() {
-   it("GoToUrlAssertURLPositiveEnterFirstNameNegativeEnterLastNameError7", function() {
+   it("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNameNegativeEnterEmailClickCreateanAcco5", function() {
  	
  	cy.visit('https://magento.nublue.co.uk/customer/account/create/')
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("est")
+cy.xpath("//*[@id='firstname']").type("odit")
 
-cy.xpath("//*[@id='lastname']").type("#!_ @")
+cy.xpath("//*[@id='lastname']").type("Hirthe")
+
+cy.xpath("//*[@id='email_address']").type("james.walker")
+
+cy.xpath("	//BUTTON[@class='action submit primary']/SPAN").click()
+
+cy.xpath("//*[@id='email_address-error']").should('exist')
 
    })
 })
