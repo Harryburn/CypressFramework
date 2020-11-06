@@ -18,7 +18,7 @@ describe("GoToUrlAssertURLPositiveEnterFirstNameNegativeEnterLastNameClickCreate
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("dolor")
+cy.xpath("//*[@id='firstname']").type("et")
 
 cy.xpath("//*[@id='lastname']").type("#!_ @")
 
