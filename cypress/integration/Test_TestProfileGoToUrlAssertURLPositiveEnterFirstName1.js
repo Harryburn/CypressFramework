@@ -7,7 +7,7 @@ describe('TestProfileGoToUrlAssertURLPositiveEnterFirstName1 - {Guid="bd6c4b0b-0
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("quibusdam")
+cy.xpath("//*[@id='firstname']").type("repudiandae")
 
     })
 })
