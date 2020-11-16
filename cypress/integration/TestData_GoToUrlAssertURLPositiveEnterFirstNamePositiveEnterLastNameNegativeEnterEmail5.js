@@ -1,29 +1,18 @@
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    debugger
-    return false
-})
-
-Cypress.on('fail', (err) => {
-    debugger
-})
 
 
-
-describe("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNameNegativeEnterEmail5", function() {
-   it("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNameNegativeEnterEmail5", function() {
- 	
- 	cy.visit('https://magento.nublue.co.uk/customer/account/create/')
+describe('GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNameNegativeEnterEmail5 - {Guid="c6d2a2ab-9baa-4523-861a-52799cefc97e"}', function() {
+    it("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNameNegativeEnterEmail5", function() {
+        
+        cy.visit('https://magento.nublue.co.uk/customer/account/create/')
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("voluptas")
+cy.xpath("//*[@id='firstname']").type("aut")
 
-cy.xpath("//*[@id='lastname']").type("Johnston")
+cy.xpath("//*[@id='lastname']").type("Hilll")
 
 cy.xpath("//*[@id='email_address']").type("")
 
-   })
+    })
 })
 

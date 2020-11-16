@@ -1,35 +1,24 @@
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    debugger
-    return false
-})
-
-Cypress.on('fail', (err) => {
-    debugger
-})
 
 
-
-describe("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnterPass1", function() {
-   it("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnterPass1", function() {
- 	
- 	cy.visit('https://magento.nublue.co.uk/customer/account/create/')
+describe('GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnterPass1 - {Guid="07a4c11d-4352-44a7-96a8-9c2472b7f83e"}', function() {
+    it("GoToUrlAssertURLPositiveEnterFirstNamePositiveEnterLastNamePositiveEnterEmailPositiveEnterPass1", function() {
+        
+        cy.visit('https://magento.nublue.co.uk/customer/account/create/')
 
 cy.url().should('eq', 'https://magento.nublue.co.uk/customer/account/create/')
 
-cy.xpath("//*[@id='firstname']").type("id")
+cy.xpath("//*[@id='firstname']").type("sit")
 
-cy.xpath("//*[@id='lastname']").type("Block")
+cy.xpath("//*[@id='lastname']").type("Hettinger")
 
 cy.xpath("//*[@id='email_address']").type("james.walker@curiosity.software")
 
-cy.xpath("//*[@id='password']").type("Vij3y9NWjr")
+cy.xpath("//*[@id='password']").type("YRXUXQhyyq")
 
-cy.xpath("//*[@id='password-confirmation']").type("lynOx6vwVe")
+cy.xpath("//*[@id='password-confirmation']").type("SQUbWPGdEx")
 
 cy.get("button[class='action\\ submit\\ primary']>span").click()
 
-   })
+    })
 })
 
